@@ -1,0 +1,131 @@
+<htm>
+    <head>
+        <title>
+            Appointment form
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           .div1 {
+                 height: 1000px;
+                 width: 40%;
+                
+                 text-align: left;
+                 margin: auto;
+                padding: 10px;
+                min-height: 900px;
+
+                }
+            .center{
+                justify-content:center;
+                align-items:center;
+                
+            }
+ @media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+        </style>
+    </head>
+    <div class="container">
+    <form >
+        <div class="div1">
+        <fieldset>
+            <legend>Personal Medical Details</legend>
+            <br><br>
+            <fieldset>
+                <legend>Personal details</legend>
+                <label>First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your firstname">
+                <br><br>
+                <label>Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your lastname">
+                <br><br>
+                <label>Gender:</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label>Male</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label>Female</label>
+                <br><br>
+                <label>DOB:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <br><br>
+                <label>E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address">
+                <br><br>
+                <label>Contact no:</label>
+                <input type="number" id="phn" name="phn" placeholder="Enter your contact no.">
+                <br><br>
+                <label>Address :</label>
+                <textarea name="address" rows="3" cols="20" placeholder="Enter your address"></textarea>
+             </fieldset>
+             <br><br>
+             <fieldset>
+                <legend>Guardian Details</legend>
+                <label>First name :</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your firstname">
+                <br><br>
+                <label>Last name :</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your lastname">
+                <br><br>
+                <label>Gender :</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label>Male</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label>Female</label>
+                <br><br>
+                <label>Contact No. :</label>
+                <input type="number" id="phn" name="phn" placeholder="Enter contact no.">
+                <br><br>
+                <label>Address :</label>
+                <textarea name="address" rows="3" cols="20" placeholder="Enter your address"></textarea>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Appointment Details</legend> 
+
+                <label">Date :</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+                <label>Consultation :</label>
+                <select id="type" name="add"><br>
+                    <option value="Dentist">Dentist</option>
+                    <option value="gyno">Gynocologist</option>
+                    <option value="diet">Dietitian</option>
+                    <option value="physio">Physiotherapist</option>
+                    <option value="gene">General surgeon</option>
+                    <option value="ortho">Orthopedist</option>
+                    <option value="phys">Physician</option>
+                    <option value="pedi">Pediatrician</option>
+                    <option value="gastr">Gastroenterologist</option><br>
+                </select>
+                <br>
+                <label>Timing:</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">9.30AM to 12.00PM</label><br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">2.00PM to 4.00PM</label> <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">6.00PM to 7.30PM</label><br>
+                <label>Payment type:</label>
+                <select id="type" name="add"><br>
+                    <option value="cash">Cash</option>
+                    <option value="upi">UPI</option>
+                    <option value="bt">Bank transfer</option>
+                    <option value="ct">Card transfer</option>
+                </select>
+            </fieldset>
+            <br><br>
+            <div class="center">
+                <button type="button" onclick="alert('successfully registered!')"><b>Register</b></button>
+            </div>
+           
+            
+            
+            
+        </fieldset>
+    </div>
+    </form>
+</div>
+</htm>
